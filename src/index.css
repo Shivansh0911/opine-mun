@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* base palette — Opine brand */
+  --ink-950: #331702;
+  --ink-900: #3d1e08;
+  --brown-700: #653914;
+  --brown-500: #8a5324;
+  --taupe-400: #bbb4a1;
+  --taupe-200: #c8cabf;
+  --cream-100: #f6f0e6;
+  --cream-50: #fbf8f2;
+  --gold-600: #b9722a;
+  --gold-500: #c6862d;
+  --gold-300: #e0ae6c;
+  --gold-100: #f4e2c4;
+  --white: #ffffff;
+
+  /* semantic aliases */
+  --surface-page: var(--cream-50);
+  --surface-card: var(--white);
+  --surface-inverse: var(--ink-950);
+  --surface-mun: var(--gold-100);
+  --surface-mun-strong: var(--brown-700);
+
+  --text-primary: var(--ink-950);
+  --text-secondary: var(--brown-700);
+  --text-muted: #7a6e5e;
+  --text-on-dark: var(--cream-50);
+  --text-on-brand: var(--cream-50);
+
+  --brand-primary: var(--brown-700);
+  --brand-primary-hover: var(--ink-900);
+  --brand-dark: var(--ink-950);
+  --accent-mun: var(--gold-500);
+  --accent-mun-hover: var(--gold-600);
+
+  --border-subtle: var(--taupe-200);
+  --border-strong: var(--taupe-400);
+  --focus-ring: var(--gold-500);
+
+  /* Placard Compressed is a paid Monotype face — Big Shoulders Display is the closest free
+     compressed poster-condensed substitute (same wedged, mechanical-poster character). */
+  --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --font-body: "Space Grotesk", -apple-system, "Segoe UI", sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  --radius-sm: 0px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 1px 2px rgba(51, 23, 2, 0.06), 0 8px 24px rgba(51, 23, 2, 0.08);
+  --shadow-card-hover: 0 4px 8px rgba(51, 23, 2, 0.08), 0 16px 40px rgba(51, 23, 2, 0.14);
+  --shadow-inset-dark: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+  /* neo-brutalist hard-offset system — solid, no blur, no soft radius */
+  --border-brutal: 3px solid var(--ink-950);
+  --border-brutal-thick: 4px solid var(--ink-950);
+  --shadow-brutal-sm: 3px 3px 0 var(--ink-950);
+  --shadow-brutal: 6px 6px 0 var(--ink-950);
+  --shadow-brutal-press: 2px 2px 0 var(--ink-950);
+  --shadow-brutal-mun: 6px 6px 0 var(--brown-700);
+
+  --container-max: 1600px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 150ms;
+  --dur-base: 280ms;
+  --dur-slow: 500ms;
+
+  --text-display-xl: clamp(3.5rem, 8vw, 7.5rem);
+  --text-display-l: clamp(2.75rem, 5.5vw, 5rem);
+  --text-display-m: clamp(2rem, 3.5vw, 3rem);
+  --text-heading: clamp(1.5rem, 2.2vw, 2rem);
+  --text-subheading: 1.375rem;
+  --text-body-l: 1.1875rem;
+  --text-body: 1.0625rem;
+  --text-small: 0.9375rem;
+  --text-label: 0.8125rem;
+
+  --lh-display: 0.94;
+  --lh-heading: 1.1;
+  --lh-body: 1.6;
+
+  --ls-display: 0.01em;
+  --ls-label: 0.06em;
+  --ls-eyebrow: 0.14em;
+
+  --weight-body: 500;
+  --weight-body-strong: 700;
+  --weight-display: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: var(--weight-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-display);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+::selection {
+  background: var(--ink-950);
+  color: var(--cream-50);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--brand-primary);
+}
+
+a:hover {
+  color: var(--brand-primary-hover);
+}
