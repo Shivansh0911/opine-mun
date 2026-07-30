@@ -9,7 +9,7 @@ const fadeUp = {
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: '-80px' },
   transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
-}
+} as const
 
 const skills = [
   ['Critical Thinking', 'Interrogate evidence, weigh trade-offs, and defend a position under pressure.'],
