@@ -4,12 +4,12 @@ import { Button } from '../components/core/Button'
 import { Badge } from '../components/core/Badge'
 import { SectionHeading } from '../components/layout/SectionHeading'
 
-// TODO: paste the real Opine MUN registration Google Form link here.
-const FORM_URL = 'https://docs.google.com/forms/'
+//Paste Opine MUN registration Google Form link here.
+const FORM_URL = 'https://forms.gle/jwWwzvFZ3aPZRqcaA'
 
 const details = [
   ['Dates', '05 & 06 September 2026'],
-  ['Delegate Fee', '₹500'],
+  ['Delegate Fee', '₹500 / $5.24'],
 ]
 
 const awards = [
@@ -73,8 +73,8 @@ export default function Register() {
             Delegate Registration
           </div>
           <p style={{ fontSize: 'var(--text-body)', color: 'var(--text-secondary)' }}>
-            Six councils, real agendas, one weekend — <b>₹500</b> per delegate. Fill out the form to apply for a council
-            and committee.
+            4 councils, real agendas, one weekend — <b>₹500</b> per delegate. Fill out the form to apply for a council
+            & committee.
           </p>
           <Button variant="primary" size="lg" href={FORM_URL} external>
             Open Registration Form

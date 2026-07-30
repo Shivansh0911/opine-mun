@@ -51,7 +51,7 @@ export default function Editions() {
       <style>{CSS}</style>
       <section style={{ padding: '80px 40px 20px', maxWidth: 'var(--container-max)', margin: '0 auto' }}>
         <SectionHeading eyebrow="Recap" title="Previous Editions" />
-        <p style={{ marginTop: '12px', color: 'var(--text-muted)', fontSize: '15px' }}>
+        <p style={{ marginTop: '12px', color: 'var(--text-muted)', fontSize: '18px' }}>
           Photo albums from past Opine MUN editions — galleries coming soon.
         </p>
       </section>

@@ -1,4 +1,14 @@
-export function Avatar({ initials, size = 88 }: { initials: string; size?: number }) {
+export function Avatar({
+  initials,
+  size = 88,
+  src,
+  alt,
+}: {
+  initials: string
+  size?: number
+  src?: string
+  alt?: string
+}) {
   return (
     <div
       style={{
@@ -13,9 +23,18 @@ export function Avatar({ initials, size = 88 }: { initials: string; size?: numbe
         fontFamily: 'var(--font-display)',
         fontSize: size * 0.34,
         flexShrink: 0,
+        overflow: 'hidden',
       }}
     >
-      {initials}
+      {src ? (
+        <img
+          src={src}
+          alt={alt ?? initials}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        />
+      ) : (
+        initials
+      )}
     </div>
   )
 }
